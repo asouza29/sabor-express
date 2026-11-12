@@ -1,0 +1,19 @@
+{
+  "name": "sabor-express",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Sabor Express - plataforma de pedidos e entregas de alimentos (zero dependências externas)",
+  "main": "server/index.js",
+  "engines": {
+    "node": ">=22.13"
+  },
+  "scripts": {
+    "start": "node --disable-warning=ExperimentalWarning server/index.js",
+    "dev": "node --disable-warning=ExperimentalWarning --watch server/index.js",
+    "seed": "node --disable-warning=ExperimentalWarning server/seed.js",
+    "test": "node --disable-warning=ExperimentalWarning --test --test-concurrency=1 tests/*.test.js",
+    "e2e": "node tests/e2e/run.js",
+    "assets": "node tools/gen-demo-assets.js",
+    "brand": "node tools/gen-brand-assets.js"
+  }
+}
